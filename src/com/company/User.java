@@ -5,9 +5,11 @@ package com.company;
  */
 public class User {
     String name;
+    String password;
 
-    public User(String name) {
+    public User(String name, String Password) {
         this.name = name;
+        this.name = password;
     }
 
 

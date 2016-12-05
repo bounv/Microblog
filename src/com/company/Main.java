@@ -35,7 +35,8 @@ public class Main {
                 "/create-user",
                 ((request, response) -> {
                     String name = request.queryParams("loginName");
-                    user = new User(name);
+                    String password = request.queryParams("loginPassword");
+                    user = new User(name, password);
                     response.redirect("/");
                     return "";
                 })
